@@ -1,0 +1,376 @@
+/* --- Whole --- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap');
+
+html{
+scroll-behavior:smooth;
+scroll-padding-top:90px;
+}
+
+body{
+margin:0;
+font-family:'Montserrat',sans-serif;
+background-color:#FFFFEC;
+color:#1B1B1B;
+}
+
+
+
+/* --- Header --- */
+header{
+background-color:#1B1B1B;
+height:90px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 10%;
+position:sticky;
+top:0;
+z-index:5;
+}
+
+.logo-container{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.brand-logo{
+height:40px;
+width:auto;
+}
+
+.brand-name{
+color:#FFFFEC;
+font-family:'Playfair Display',serif;
+font-size:1.5rem;
+margin:0;
+letter-spacing:2px;
+}
+
+.brand-name span{
+color:#9B9B9B;
+font-weight:300;
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+}
+
+.nav-links li a{
+color:#9B9B9B;
+text-decoration:none;
+margin-left:30px;
+font-weight:600;
+font-size:0.8rem;
+text-transform:uppercase;
+transition:0.3s;
+}
+
+.nav-links li a:hover{
+color:#FFFFEC;
+}
+
+
+
+
+
+
+
+/* --- Home --- */
+.hero{
+height: 650px;
+background-color:#1B1B1B;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:#FFFFEC;
+position:relative;
+margin-bottom:50px;
+}
+
+.hero-bg-logo{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+width:100%;
+opacity:0.075;
+}
+
+.hero h1{
+font-size:5rem;
+margin:0;
+font-family:'Playfair Display',serif;
+position:relative;
+}
+
+.btn-primary{
+display:inline-block;
+margin-top:10px;
+padding:12px 35px;
+border:1px solid #FFFFEC;
+color:#FFFFEC;
+text-decoration:none;
+transition:0.3s;
+position:relative;
+}
+
+.btn-primary:hover{
+background:#FFFFEC;
+color:#1B1B1B;
+}
+
+
+
+
+
+/* --- ABOUT --- */
+.about-section{
+padding:120px 5%;
+background-color:#FFFFEC;
+margin-bottom:120px;
+}
+
+.about-grid{
+display:flex;
+align-items:center;
+gap:80px;
+}
+
+
+.about-content{
+flex:1;
+}
+
+.about-content h2{
+font-family:'Playfair Display',serif;
+font-size:3.5rem;
+line-height:1.1;
+margin:20px 0;
+}
+
+.est{
+display:block;
+text-transform:uppercase;
+letter-spacing:3px;
+color:#9B9B9B;
+font-size:12px;
+margin-bottom:10px;
+}
+
+.about-main-text{
+max-width:800px;
+margin:0 auto 50px auto;
+text-align:justify;
+font-size:18px;
+line-height:1.8;
+}
+
+.commitments-grid{
+display:flex;
+gap:40px;
+margin-bottom:50px;
+}
+
+.commitment-item{
+flex:1;
+background:#f2f2f2;
+padding:30px;
+border:1px solid #eee;
+}
+
+.commitment-item h3{
+margin-bottom:15px;
+text-transform:uppercase;
+font-size:16px;
+letter-spacing:1px;
+}
+
+.vision-box{
+background:#1B1B1B;
+color:white;
+padding:40px;
+margin-top:40px;
+}
+
+
+
+
+
+/* --- Shop --- */
+.shop-section{
+padding-top:50px;
+margin-bottom:150px;
+}
+
+.container{
+max-width:1000px;
+margin:0 auto;
+padding:0 5%;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:60px 40px;
+margin-top:60px;
+}
+
+.product-card{
+position:relative;
+}
+
+.image-container{
+position:relative;
+aspect-ratio:2/3;
+background-color:#f2f2f2;
+}
+
+.product-img{
+width:100%;
+height:100%;
+object-fit:contain;
+transition:transform 0.5s;
+}
+
+.product-card:hover .product-img{
+transform:scale(1.10);
+}
+
+.badge{
+position:absolute;
+top:15px;
+left:15px;
+padding:5px 12px;
+font-size:12px;
+font-weight:600;
+text-transform:uppercase;
+letter-spacing:2px;
+}
+
+.badge.sale{
+background-color:#9B9B9B;
+color:white;
+}
+
+.price{
+font-weight:600;
+color:#9B9B9B;
+}
+
+
+
+
+/* --- Contact --- */
+.contact-section{
+margin-bottom:100px;
+}
+
+.contact-desc{
+color:#9B9B9B;
+max-width:400px;
+line-height:1.6;
+margin-top:20px;
+}
+
+.social-item{
+display:flex;
+align-items:center;
+gap:20px;
+text-decoration:none;
+color:#FFFFEC;
+padding:20px;
+background: #FFFFEC08;
+border: 1px solid #9B9B9B1A;
+transition:0.4s ease;
+}
+
+.social-item:hover{
+background: #FFFFEC14;
+transform:translateX(10px);
+border-color:#9B9B9B;
+}
+
+.social-text p{
+margin:5px 0 0;
+font-size:15px;
+color:#9B9B9B;
+}
+
+.social-header h4{
+font-size:18px;
+margin:0;
+color:#1B1B1B;
+}
+
+.social-src-icon{
+width:80px;
+height:80px;
+object-fit:contain;
+}
+
+
+
+
+/* --- Footer --- */
+.main-footer{
+padding:1px 0;
+background-color:#1B1B1B;
+color:#FFFFEC;
+text-align:center;
+margin-top:0;
+}
+
+.footer-icon{
+height:100px;
+width:auto;
+max-width:100px;
+display:block;
+margin:0 auto;
+}
+
+.footer-copyright{
+font-size:14px;
+color:#9B9B9B;
+text-transform:uppercase;
+letter-spacing:2px;
+margin:10px 0 0 0;
+}
+
+.footer-tagline{
+font-family:'Playfair Display',serif;
+font-style:italic;
+font-size:16px;
+color:#9B9B9B;
+opacity:0.6;
+}
+
+
+
+
+/* --- Responsiveness --- */
+@media(max-width:1100px){
+.product-grid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:48px;
+}
+.about-grid{
+flex-direction:column;
+}
+.commitments-grid{
+flex-direction:column;
+}
+}
+
+@media(max-width:600px){
+.product-grid{
+grid-template-columns:1fr;
+}
+}  
